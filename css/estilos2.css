@@ -1,0 +1,32 @@
+main{
+    max-width: 800px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid; /*Declaramos que queremos crear una rejilla (espacio o tabla)*/
+    grid-template-columns: 200px 200px 200px 200px ; /*Indicamos el numero de columnas y su tamaño que queremos crear*/
+    grid-template-rows: 200px 200px 200px 200px; /*Indicamos el numero de filas y su tamaño que queremos crear*/
+    grid-gap: 1rem; /*Creamos un espacio entre las celdas*/
+}
+
+img{
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+.item-a{
+    grid-row:1 / 3; /*indicamos cuantos bordes de filas (horizontalmente) tenemos que juntar*/
+}
+
+.item-b{
+    grid-column: 3 / 5; /*indicamos cuantos bordes de columnas (verticalmente) tenemos que juntar*/
+}
+
+.item-c{
+    grid-row:2 / 4;
+}
+
+.item-d{
+    grid-column: 3 / 5;
+}

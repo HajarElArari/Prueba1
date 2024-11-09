@@ -1,0 +1,22 @@
+
+main{ /*main es rejilla*/
+    max-width: 800px;
+    padding: 1rem;
+    margin: 0 auto;
+    display:grid; /*Activar la rejilla , y indicamos que la et main va ser et padre*/
+    /*Indicamos el numero de filas y de columnas que queremos crear y el tamaño de cada celda separados por un espacio*/
+    grid-template-columns: 200px 200px 200px 200px; /* en (px) o en (rem) o en (fr) o en (%)*/
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 1rem; /*espacio entre celdas*/
+}
+
+/*Como las imágenes son muy grandes y depasan el tamaño de las celdas tenemos que aplicarles estilos para que se ajusten*/
+
+img{
+    width:100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover; /*ajusta una imagen o video para que cubra completamente su contenedor, manteniendo sus proporciones pero recortando partes si es necesario.*/
+
+
+}
